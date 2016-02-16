@@ -19,10 +19,12 @@ apt-get install -y oracle-java8-installer
 bash -c "echo JAVA_HOME=/usr/lib/jvm/java-8-oracle >> /etc/environment"
 echo "********* Java installed *********"
 
-wget https://install.codenvycorp.com/che/eclipse-che-nightly.zip
 apt-get install -y unzip
+
+wget https://install.codenvycorp.com/che/eclipse-che-nightly.zip
 unzip eclipse-che-nightly.zip -d eclipse-che-nightly
 chown -R vagrant:vagrant eclipse-che-nightly
-cd eclipse-che-nightly
-su vagrant ./eclipse*/bin/che.sh
 
+wget https://install.codenvycorp.com/che/eclipse-che-latest.zip
+unzip eclipse-che-latest.zip -d eclipse-che-latest
+chown -R vagrant:vagrant eclipse-che-latest

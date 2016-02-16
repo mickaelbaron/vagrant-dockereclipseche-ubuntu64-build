@@ -15,11 +15,27 @@ From the root of this project, up and running the box.
 $ vagrant up
 ```
 
+## Run Eclipse CHE (latest version)
+
+Always from the root of this project, start the Eclipse CHE server
+
+```shellscript
+$ vagrant ssh -c /home/vagrant/eclipse-che-latest/eclipse*/bin/che.sh
+```
+
+## Run Eclipse CHE (nightly version)
+
+Always from the root of this project, start the Eclipse CHE server
+
+```shellscript
+$ vagrant ssh -c /home/vagrant/eclipse-che-nightly/eclipse*/bin/che.sh
+```
+
 ## Test
 
 Open your favorite web browser and go to this URL http://localhost:8080
 
-## Examine Eclipse CHE
+## Inspect the Eclipse CHE workspace instances
 
 From the root of this project, execute this command line.
 
@@ -27,7 +43,7 @@ From the root of this project, execute this command line.
 $ vagrant ssh
 ```
 
-To examine the workspace, execute this command line.
+To inspect the workspace instances, execute this command line.
 
 ```shellscript
 $ docker ps
